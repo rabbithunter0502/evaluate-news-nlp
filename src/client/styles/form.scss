@@ -1,0 +1,90 @@
+.form {
+    border: 1px solid #fa6400;
+    border-radius: 3px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    &__label {
+        display: block;
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        margin-top: 0.7rem;
+        transition: all 0.3s;
+        transform: translateY(0rem);
+        font-family: 'Roboto', sans-serif;
+      }
+      
+    &__input {
+        width: 90%;
+        color: #333;
+        margin: 0 auto;
+        display: block;
+        font-size: 1.2rem;
+        padding: 1.5rem 2rem;
+        border-radius: 0.2rem;
+        transition: all 0.3s;
+        border: 1px solid #fa6400;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+    }  
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+
+#response {
+    line-height: 2;
+    background: aliceblue;
+    padding: 15px;
+    strong {
+        font-size: 18px;
+        font-weight:700;
+    }
+    .result-item {
+        font-size: 16px;
+        color: red;
+        b {
+            font-weight: 600;
+            color: #545454;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+.button {
+  appearance: button;
+  background-color: #fa6400;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: .8px;
+  font-size: 16px;
+  margin: 15px auto;
+  outline: none;
+  overflow: visible;
+  line-height: 20px;
+  padding: 13px 16px;
+  text-align: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 70%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate News NLP</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="logo">
+                
+            </div>
+            <div id="navigation">
+                NLP Search
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form id="nlp-form" class="form" onsubmit="return handleSubmit(event)">
+                    <input class="form__input" id="name" type="text" name="input" value="" placeholder="Please input text" required>
+                    <input class="button" type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                    <input class="button" type="submit" name="" value="submit with mock data response" onclick="return handleSubmit(event, 'http://localhost:8080/test')" onsubmit="return handleSubmit(event, 'http://localhost:8080/test')">
+                </form>
+            </section>
+
+            <section id="response">
+                <strong>Form Results:</strong>
+                <div id="results"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="logo"></div>
+            <div>© 2022 Duclt</span>
+        </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(value => {
+                    console.log('register successfully', value)
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+            }
+        </script>
+    </body>
+</html>
